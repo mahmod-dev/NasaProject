@@ -23,6 +23,14 @@ interface ApiService {
     suspend fun getImage(
         @Query("api_key") key: String = "EWMHtoskp7E0HC3scYRQGWJJeynBfDIvfbkMctJx"
     ): DailyImage
+    
+    
+    
+    @GET("planetary/apod")
+    suspend fun getImage2(
+        @Query("api_key") key: String = "EWMHtoskp7E0HC3scYRQGWJJeynBfDIvfbkMctJx"
+    ): DailyImage
+
 
 
 }
